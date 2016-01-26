@@ -1,4 +1,4 @@
 {
     "version": "1.0.0",
-    "extends": "uuf.page.home"
+    "extends": "uuf.template.home"
 }

@@ -1,7 +1,7 @@
 {
     "version": "1.0.0",
-    "index": 9260,
-    "extends": "uuf.div.side-pane",
+    "index": 9200,
+    "extends": "uuf.template.side-pane",
     "pushedUris": [
         "/",
         "/{+any}"

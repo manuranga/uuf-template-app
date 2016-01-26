@@ -3,28 +3,28 @@
     "cachingEnabled": false,
     "debuggingEnabled": false,
     "permissionRoot": "/",
-    "loginPage": "uuf.page.sign-in",
+    "loginPage": "uuf.template.sign-in",
     "adminServicesUrl": "https://${server.ip}:${server.https_port}/admin/services/",
     "authModule": {
         "enabled": true,
         "login": {
             "onSuccess": {
                 "script": "/app/modules/login.js",
-                "page": "uuf.page.home"
+                "page": "uuf.template.home"
             },
             "onFail": {
                 "script": "/app/modules/login.js",
-                "page": "uuf.page.sign-in"
+                "page": "uuf.template.sign-in"
             }
         },
         "logout": {
             "onSuccess": {
                 "script": "/app/modules/logout.js",
-                "page": "uuf.page.sign-in"
+                "page": "uuf.template.sign-in"
             },
             "onFail": {
                 "script": "/app/modules/logout.js",
-                "page": "uuf.page.home"
+                "page": "uuf.template.home"
             }
         },
         "sso": {
@@ -35,11 +35,11 @@
             "keyStorePassword": "wso2carbon",
             "identityProviderAlias": "wso2carbon",
             "identityProviderUrl": "https://${server.ip}:${server.https_port}/samlsso",
-            "intermediatePage": "uuf.page.sso-intermediate"
+            "intermediatePage": "uuf.template.sso-intermediate"
         }
     },
     "errorPages": {
-        "404": "uuf.page.error",
-        "default": "uuf.page.error"
+        "404": "uuf.template.error",
+        "default": "uuf.template.error"
     }
 }
