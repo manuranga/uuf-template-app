@@ -1,4 +1,4 @@
 {
     "version": "1.0.0",
-    "extends": "uuf.div.header.logo"
+    "extends": "uuf.template.header.logo"
 }
